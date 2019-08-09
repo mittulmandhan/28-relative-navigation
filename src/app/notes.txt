@@ -1,0 +1,7 @@
+In the last code we used absolute paths for navigation which appearently is inflexible.If we ever want to make changes in the url we need to change the absolute path constantfrom every component and in the routes object array as well which is very time taking if we see from a scalable aspect.
+
+suppose if we want to change from '/departments' to '/department-list' then we need to make changes, in the department list & department detail component and in app routing module as well, wherever '/deparments' occur in the entire application.
+
+Such issue reflects the lack of flexibility in the code.On the contrary, there will be a lot more confusions and chaos through out the testing phase and in the real world as well.
+
+In this code, we will use relative navigation to prevent all the confusions and errors which allows us to pass the path of url as a variable argument.

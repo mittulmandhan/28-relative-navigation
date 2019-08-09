@@ -8,9 +8,9 @@ import { DepartmentDetailComponent } from './department-detail/department-detail
 const routes: Routes = [
   // redirecting routes for the default url
   // this statement must be put on the top to do so
-  { path: '', redirectTo: '/departments', pathMatch: 'full' },
-  { path: 'departments', component: DepartmentListComponent},
-  { path: 'departments/:id', component: DepartmentDetailComponent },
+  { path: '', redirectTo: '/department-list', pathMatch: 'full' },
+  { path: 'department-list', component: DepartmentListComponent},
+  { path: 'department-list/:id', component: DepartmentDetailComponent },
   { path: 'employees', component: EmployeeListComponent },
   // wildcard route
   // this is for displaying the message 'Page Not Found' when navigated page does not exist
